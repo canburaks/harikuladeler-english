@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { useEffect } from 'react'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -7,12 +6,7 @@ class MyDocument extends Document {
     return { ...initialProps }
   }
 
-    useEffect(() => {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)}
-      gtag('js', new Date());
-      gtag('config', 'G-LYECJRL21W');
-    },[])
+
 
   render() {
     return (

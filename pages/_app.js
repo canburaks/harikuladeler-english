@@ -1,11 +1,18 @@
 import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
   const { pathname } = router
   
-
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)}
+    gtag('js', new Date());
+    gtag('config', 'G-LYECJRL21W');
+  },[])
 
    
 
