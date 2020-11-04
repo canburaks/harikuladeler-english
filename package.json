@@ -1,0 +1,20 @@
+{
+  "name": "harikulade-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "yarn build && git add . && git commit -m '...' && git push"
+  },
+  "dependencies": {
+    "next": "10.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-jsx": "^3.3.1"
+  },
+  "devDependencies": {
+    "@stitches/react": "^0.0.2"
+  }
+}
